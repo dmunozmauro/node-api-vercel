@@ -1,5 +1,5 @@
 const SHA2 = require("sha2");
-import { getObtenerData } from '../database/dao/sincronizacion-dao'
+import { getObtenerData } from '../database/dao'
 
 
 export const CodehashClave = async (req, res) => {
