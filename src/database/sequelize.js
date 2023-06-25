@@ -7,7 +7,7 @@ if (process.env.NODE_ENV === 'local') {
     sequelize = new Sequelize(dbConfig)
 } else {
     sequelize = new Sequelize({
-        dialect: 'postgre',
+        dialect: 'postgres',
         timezone: '-03:00'    
     })
 }
