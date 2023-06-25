@@ -1,5 +1,5 @@
 const SHA2 = require("sha2");
-import { getObtenerData } from '../database/dao'
+// import { getObtenerData } from '../database/dao'
 
 
 export const CodehashClave = async (req, res) => {
@@ -8,7 +8,7 @@ export const CodehashClave = async (req, res) => {
         const clave = "Diego0831."
         const shaPass = Buffer.from(SHA2["SHA-224"](clave)).toString('base64');
 
-        const data = await getObtenerData();
+        // const data = await getObtenerData();
 
         res.status(200).send({ shaPass, data });
     } catch (e) {
